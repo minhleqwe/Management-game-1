@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="{{URL('css/style.css')}}">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/featured/w09ig8odvffwuyrd.jpg);
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 0.5); */
+    background-size: cover;
+  }
+
+  form {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+  }
+
+  input {
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    background: transparent;
+    color: white;
+  }
+
+  button {
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    background-color: blue;
+    border: none;
+    color: white;
+    margin-top: 20px;
+  }
+
+  form h1 {
+    margin-bottom: 30px;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+</style>
+
+<body>
+  <form>
+    <h1>SignUp</h1>
+    <input type="text" name="" placeholder="Username">
+    <input type="text" name="" list="gender" placeholder="Gender">
+    <datalist id="gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </datalist>
+    <input type="email" name="" placeholder="Email">
+    <input type="password" name="" placeholder="Password">
+    <input type="password" name="" placeholder="Confirm Password">
+    <button type="submit">SignUp</button>
+  </form>
+</body>
+
+</html>
